@@ -1,0 +1,14 @@
+/* 
+    Document   : main-css.css
+    Created on : 25 серп 2013, 1:12:01
+    Author     : taras
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+b{
+    color:red;   
+}

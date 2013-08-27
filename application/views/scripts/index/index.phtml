@@ -1,0 +1,11 @@
+<?php
+	// Создаём заголовок страницы, который загрузится в layout
+	$this->title = "Блог Тернопіль bvblogic";
+	$this->headTitle($this->title);
+	?>
+	<p><a href="<?php echo $this->url(array('controller'=>'index','action'=>'add'));?>">Додати пост</a></p>
+<?php
+
+	        // Создаём patrialLoop, передав массив постів, полученных от контроллера
+	        echo $this->partialLoop('partials/blog.phtml', $this->blog);
+	    

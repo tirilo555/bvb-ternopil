@@ -1,0 +1,29 @@
+<?php
+    // Создаём meta тег Content-Type
+    $this->headMeta()->appendHttpEquiv('Content-Type', 'text/html;charset=utf-8');
+    // Указываем символ разделитель в теге title
+    $this->headTitle()->setSeparator(' - ');
+    // Определяем содержимое тега title
+    $this->headTitle('BVB blog');
+    
+    // Выводим doctype, который считывается из application.ini
+    echo $this->doctype();
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <?php echo $this->headMeta();?>
+        <?php echo $this->headTitle();?>
+        <?php echo $this->headLink()->prependStylesheet('/css/main-css.css');?>
+    </head>
+    <body>
+        <h1>
+	        <?php
+	            // Выводим заголовок странице, который будем формировать в каждом view
+	            echo $this->escape($this->title);
+	        ?>
+	</h1>
+        <?php echo $this->layout()->content;?>
+    </body>
+</html>
