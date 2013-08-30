@@ -12,3 +12,99 @@ root {
 b{
     color:red;   
 }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, 
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, 
+font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, 
+caption, tbody, tfoot, thead, tr, th, td{
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+html, body {
+    height: 100%;
+}
+
+body{
+    min-height: 100px;
+    margin: 0 auto;
+    width: 100%;
+    
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    overflow-x: auto;
+    overflow-y: scroll;
+    
+}
+#container{
+    margin: 0 auto;
+    overflow: hidden;
+    min-width: 95%;
+    background-color: #D4D6D7;
+    background-image: url("http://static.wixstatic.com/media/874525150724b27ecb7c53aa6954e1d1.wix_mp_srz_500_500_75_22_0.50_1.20_0.00_wix_mp_srz");
+    background-position: center top;
+    background-repeat: repeat;
+    background-size: auto auto;
+}
+/*************************HEADER***************************/
+#header{
+     
+    background: url("http://bvb/images/bevel_300.png") repeat-x scroll 0 0 #181A1C;
+    border-bottom: 1px solid #FFFFFF;
+    border-top: 0 solid #FFFFFF;
+    box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.6) inset, 0 -1px 1px 0 rgba(0, 0, 0, 0.6) inset, 0 0 5px 0 rgba(0, 0, 0, 0.6);
+    height: 218px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    
+}
+.header_background_wrap{
+    height: 218px;
+    margin: 0 auto;
+    width: 980px;
+    
+}
+.header_logo{
+    padding-top: 44px;
+    width: 660px;
+    color: #FFFFFF;
+}
+.header_logo h1{
+    letter-spacing: normal;
+    line-height: normal;
+    margin: 0;
+    font: 60px/1.4em "Charcoal","Impact","sans-serif";
+    f
+}
+.color_logo{
+    color: #FFFFFF;
+    font-family: Geneva, Tahoma, sans-serif; 
+    font-size: 18px;
+}
+/***************************CONTENT*******************************/
+.contentWrapper{
+    margin: 218px auto 0;
+    width: 960px;
+    background-color: #FFFFFF;
+    margin-bottom: 15px;
+    padding: 10px;
+    
+}
+
+/***************************FOOTER********************************/
+#footer{
+    width: 100%;
+    height: 270px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-bottom: 15px solid #CC0006;
+}
+.footer_wrap{
+    margin: 0 auto;
+    width: 980px;
+    background-color: #D4D6D7;
+    height: 270px;
