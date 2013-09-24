@@ -1,0 +1,12 @@
+<?php
+    $this->title = "Видалення поста";
+    $this->headTitle($this->title);
+?>
+
+<form action="<?php echo $this->url(array('action'=>'delete')); ?>" method="post">
+    <div>
+        <input type="hidden" name="id" value="<?php echo $this->blog['id']; ?>" />
+        <input type="submit" name="del" value="Да" />
+        <input type="submit" name="del" value="Нет" />
+    </div>
+</form>

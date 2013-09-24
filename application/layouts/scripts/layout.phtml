@@ -2,9 +2,9 @@
     // Создаём meta тег Content-Type
     $this->headMeta()->appendHttpEquiv('Content-Type', 'text/html;charset=utf-8');
     // Указываем символ разделитель в теге title
-    $this->headTitle()->setSeparator(' - ');
+    //$this->headTitle()->setSeparator(' - ');
     // Определяем содержимое тега title
-    $this->headTitle('BVB blog');
+   // $this->headTitle('BVB blog');
     
     // Выводим doctype, который считывается из application.ini
     echo $this->doctype();
@@ -18,12 +18,39 @@
         <?php echo $this->headLink()->prependStylesheet('/css/main-css.css');?>
     </head>
     <body>
-        <h1>
+       
+        
+        <div id="container" >
+            <div id="header">
+                <div class="header_background_wrap">
+                    <div class="header_logo">
+                        <h1>
+                            <span>[bvblogic] </span>
+                            <span class="color_logo">Ternopil Team</span>
+                        </h1>
+                    </div>
+                    <div class="navigation"></div>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="contentWrapper">
+                <div id="dialog-overlay"></div>
+                <div id="dialog-box">
+                   
+                </div>
+                <h1>
 	        <?php
 	            // Выводим заголовок странице, который будем формировать в каждом view
-	            echo $this->escape($this->title);
+	            //echo $this->escape($this->title);
 	        ?>
-	</h1>
-        <?php echo $this->layout()->content;?>
+                </h1>
+                <?php echo $this->layout()->content;?> 
+            </div>
+            <div id="footer">
+                <div class="footer_wrap"></div>
+            </div>
+         </div>
     </body>
 </html>
