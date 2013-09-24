@@ -1,12 +1,18 @@
 <?php
 
-class IndexControllerTest extends Zend_Test_PHPUnit_ControllerTestCase
+require_once 'PHPUnit/Framework/TestCase.php';
+
+class IndexControllerTest extends PHPUnit_Framework_TestCase
 {
 
     public function setUp()
     {
-        $this->bootstrap = new Zend_Application(APPLICATION_ENV, APPLICATION_PATH . '/configs/application.ini');
-        parent::setUp();
+        /* Setup Routine */
+    }
+
+    public function tearDown()
+    {
+        /* Tear Down Routine */
     }
 
 

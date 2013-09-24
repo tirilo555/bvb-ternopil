@@ -2,9 +2,9 @@
     // Создаём meta тег Content-Type
     $this->headMeta()->appendHttpEquiv('Content-Type', 'text/html;charset=utf-8');
     // Указываем символ разделитель в теге title
-    $this->headTitle()->setSeparator(' - ');
+    //$this->headTitle()->setSeparator(' - ');
     // Определяем содержимое тега title
-    $this->headTitle('BVB blog');
+   // $this->headTitle('BVB blog');
     
     // Выводим doctype, который считывается из application.ini
     echo $this->doctype();
@@ -43,7 +43,7 @@
                 <h1>
 	        <?php
 	            // Выводим заголовок странице, который будем формировать в каждом view
-	            echo $this->escape($this->title);
+	            //echo $this->escape($this->title);
 	        ?>
                 </h1>
                 <?php echo $this->layout()->content;?> 
