@@ -6,6 +6,7 @@ class Blog_IndexController extends Zend_Controller_Action
     public function init()
     {
         /* Initialize action controller here */
+        //,b,mnbm,nbm,n
     }
 
     public function indexAction()
