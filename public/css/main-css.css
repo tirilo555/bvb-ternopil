@@ -81,11 +81,73 @@ body{
     font: 60px/1.4em "Charcoal","Impact","sans-serif";
     f
 }
+.header_logo h1 a{
+    text-decoration: none;
+    color:#fff;
+}
 .color_logo{
     color: #FFFFFF;
     font-family: Geneva, Tahoma, sans-serif; 
     font-size: 18px;
 }
+
+/**********************MENU**********************/
+.menu{
+    display: inherit;
+    height: 60px;
+    overflow: visible;
+    text-align: left;
+    white-space: nowrap;
+    width: 1000px;
+    background-color: #D4D6D7;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.7);
+    /*margin: 0 0 10px;*/
+    position: relative;
+    
+    
+    left: -10px;
+    /*min-height: 70px;*/
+    opacity: 1;
+    top: 13px;
+    
+   
+}
+#three-ang{
+    border-right-width: 0;
+    border-top-color: #636769;
+    left: 0;
+    bottom: -10px;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+.menu-item{
+    
+    transition: background-color 0.4s ease 0s;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 5px;
+    position: relative;
+    /*height: 60px;*/
+}
+.menu .active{
+    background-color: #CC0006;
+    
+}
+.menu .active a{
+    color: #FFFFFF;
+}
+.menu-item a{
+    line-height: 60px;
+    width: auto;
+    color: #000;
+    display: inline-block;
+    transition: color 0.4s ease 0s;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+
 /***************************CONTENT*******************************/
 .contentWrapper{
     margin: 218px auto 0;

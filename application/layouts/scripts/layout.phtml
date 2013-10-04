@@ -25,11 +25,21 @@
                 <div class="header_background_wrap">
                     <div class="header_logo">
                         <h1>
-                            <span>[bvblogic] </span>
+                            <a href="<?php echo $this->url(array(),'home');?>"><span>[bvblogic] </span></a>
                             <span class="color_logo">Ternopil Team</span>
                         </h1>
                     </div>
-                    <div class="navigation"></div>
+                    <div class="menu">
+                        <!--div id="three-ang"></div-->
+                        <div>
+                            <div class="menu-item active">
+                                <a href="<?php echo $this->url(array(),'home');?>">Головна</a>
+                            </div>
+                            <div class="menu-item">
+                                <a href="<?php echo $this->url(array(),'blog');?>">Блог</a>
+                            </div>
+                        </div>
+                    </div>
                     
                 </div>
                 
